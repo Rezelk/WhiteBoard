@@ -1,0 +1,293 @@
+#whiteboard {
+	float: left;
+}
+#chat {
+	float: left;
+	width: 400px;
+	height: 300px;
+	position: relative;
+	margin-left: 10px;
+}
+#console {
+	position: absolute;
+	bottom: 0px;
+}
+.console {
+	margin: 1px;
+}
+#console .name {
+	width: 70px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 8px;
+	padding: 2px 4px 2px 4px;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2) inset;
+}
+#console .text {
+	width: 250px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 8px;
+	padding: 2px 4px 2px 4px;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2) inset;
+}
+#console .submit {
+	width: 40px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: rgba(80, 80, 255, 1.0);
+	border-radius: 8px;
+	padding: 2px;
+	background: rgba(80, 80, 255, 1.0);
+	color: white;
+	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+#console .submit:hover {
+	border-color: rgba(128, 128, 255, 1.0);
+	background: rgba(128, 128, 255, 1.0);
+}
+#console .button {
+	cursor: pointer;
+}
+#messages {
+	width: 400px;
+	height: 270px;
+	overflow-y: scroll;
+	overflow-x: none;
+}
+#messages .sentence {
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
+	padding: 8px 3px 3px 3px;
+	margin-bottom: 2px;
+	position: relative;
+}
+#messages .sentence .text {
+	font-size: 0.9em;
+	margin-top: 0.7em;
+}
+#messages .sentence .name {
+	font-size: 0.7em;
+	font-weight: bold;
+	letter-spacing: 0.3em;
+	color: rgba(0, 0, 128, 1.0);
+	margin-top: 3px;
+	margin-left: 3px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#messages .sentence .datetime {
+	font-size: 0.6em;
+	color: gray;
+	margin-rihgt: 3px;
+	position: absolute;
+	top: 2px;
+	right: 3px;
+}
+#messages .sentence .date {
+	float: right;
+	margin-right: 5px;
+}
+#messages .sentence .time {
+	float: right;
+}
+
+
+#board {
+	width: 400px;
+	height: 300px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 10px;
+	background: white;
+}
+
+.control {
+	width: 20px;
+	height: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 3px;
+	background: white;
+	margin: 1px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 0.5em;
+	float: left;
+}
+#palettes {
+	clear: both;
+}
+#brushes {
+	clear: both;
+}
+#buttons {
+	clear: both;
+}
+#debug {
+	font-size: 0.8em;
+	clear: both;
+}
+
+.black {
+	background: black;
+}
+.red {
+	background: red;
+}
+.blue {
+	background: blue;
+}
+.green {
+	background: green;
+}
+.purple {
+	background: purple;
+}
+.brown {
+	background: brown;
+}
+.gold {
+	background: gold;
+}
+.gray {
+	background: gray;
+}
+.white {
+	background: white;
+}
+.orange {
+	background: orange;
+}
+
+.brush::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 8px;
+}
+.size1::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 10px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: blue;
+}
+.size2::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 10px;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+	border-color: blue;
+}
+.size3::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 9px;
+	border-style: solid;
+	border-width: 0px 0px 3px 0px;
+	border-color: blue;
+}
+.size4::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 9px;
+	border-style: solid;
+	border-width: 0px 0px 4px 0px;
+	border-color: blue;
+}
+.size5::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 8px;
+	border-style: solid;
+	border-width: 0px 0px 5px 0px;
+	border-color: blue;
+}
+.size6::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 8px;
+	border-style: solid;
+	border-width: 0px 0px 6px 0px;
+	border-color: blue;
+}
+.size7::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 7px;
+	border-style: solid;
+	border-width: 0px 0px 7px 0px;
+	border-color: blue;
+}
+.size8::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 7px;
+	border-style: solid;
+	border-width: 0px 0px 8px 0px;
+	border-color: blue;
+}
+.size9::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 6px;
+	border-style: solid;
+	border-width: 0px 0px 9px 0px;
+	border-color: blue;
+}
+.size10::before {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 6px;
+	border-style: solid;
+	border-width: 0px 0px 10px 0px;
+	border-color: blue;
+}
+
+.save {
+	background: rgba(64, 64, 64, 1.0);
+	color: white;
+}
+.save::before {
+	content: 'png';
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+
+#snapshots {
+	background: rgba(0, 0, 0, 0.1);
+}
+.snapshot {
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	border-radius: 10px;
+	background: white;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	float: left;
+}

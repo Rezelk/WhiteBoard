@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+  div#whiteboard
+    canvas#board(width='400', height='300')
+    div#control
+      div#palettes
+        div(class='control palette black', title='black')
+        div(class='control palette gray', title='gray')
+        div(class='control palette brown', title='brown')
+        div(class='control palette red', title='red')
+        div(class='control palette orange', title='orange')
+        div(class='control palette gold', title='gold')
+        div(class='control palette green', title='greem')
+        div(class='control palette blue', title='blue')
+        div(class='control palette purple', title='purple')
+        div(class='control palette white', title='white')
+      div#brushes
+        div(class='control brush size1', title='1px')
+        div(class='control brush size2', title='2px')
+        div(class='control brush size3', title='3px')
+        div(class='control brush size4', title='4px')
+        div(class='control brush size5', title='5px')
+        div(class='control brush size6', title='6px')
+        div(class='control brush size7', title='7px')
+        div(class='control brush size8', title='8px')
+        div(class='control brush size9', title='9px')
+        div(class='control brush size10', title='10px')
+      div#buttons
+        div(class='control button save', title='Snapshot')
+  
+  div#chat
+    div#messages
+    div#console
+      input(class='console input name', placeholder='name')
+      input(class='console input text', placeholder='message')
+      input(class='console button submit', type='button', value='send')
+  
+  div#debug
+    div#pageAxis
+    div#canvasAxis
+    div#brushColor
+    div#brushSize
+    div#sessionId
+    div#transportName
+    div#message
+  
+  div#snapshots
+ 
